@@ -1,1 +1,50 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 
+.weatherwrap {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid red;
+  border-radius: 10px;
+  /* Margin: center text in page, Text align: to center text only */
+}
+
+.title {
+  color: rosybrown;
+  font-size: small;
+}
+
+h1 {
+  color: rosybrown;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 0;
+  padding-top: 100px;
+}
+
+#time-date {
+  color: rosybrown;
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+
+.degree-number {
+  color: rosybrown;
+  font-size: 70px;
+  font-weight: bolder;
+}
+
+.celcius {
+  color: rosybrown;
+  font-size: 40px;
+}
+
+.faren {
+  color: rosybrown;
+  font-size: 40px;
+}

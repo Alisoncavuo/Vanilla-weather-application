@@ -12,16 +12,21 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <!-- css comes after Bootstrap otherwise is overide -->
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <div class="weatherwrap">
-      <!-- container for Bootstrap -->
-      <div class="container">
-        <div class="title">The weather is looking...</div>
+    <!-- container for Bootstrap -->
+    <div class="container">
+      <div class="weatherwrap">
+        <div class="title">📍Ali's weather app📍</div>
         <h1>Buenos Aires</h1>
         <div id="time-date">Tuesday 25th, 16:42</div>
-        <div class="degree">16°C | F°</div>
+
+        <span class="degree-number">16</span>
+        <span class="celcius">°C </span>
+        <span class="faren">| F°</span>
+
         <div class="emoji">🌤</div>
         <hr />
         <div class="cloudy">Cloudy</div>
@@ -31,14 +36,14 @@
           <div class="col-md-4 precipitation">Precipitation 34%</div>
           <div class="col-md-4 wind">Wind 1.79km/h</div>
         </div>
+        <small>
+          <a
+            href="https://github.com/Alisoncavuo/Vanilla-weather-application"
+            target="_blank"
+            >Open-source code</a
+          ><span>&nbsp by Alison Cavuoti</span>
+        </small>
       </div>
-      <small>
-        <a
-          href="https://github.com/Alisoncavuo/Vanilla-weather-application"
-          target="_blank"
-          >Open-source code</a
-        ><span>&nbsp by Alison Cavuoti</span>
-      </small>
     </div>
     <script src="src/app.js"></script>
   </body>
