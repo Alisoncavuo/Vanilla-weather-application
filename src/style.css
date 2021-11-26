@@ -17,6 +17,7 @@ body {
   padding: 20px;
   border: 1px solid red;
   border-radius: 10px;
+  background: linear-gradient(to top, #f7efb2 20%, #ace0f9 80%);
   /* Margin: center text in page, Text align: to center text only */
 }
 
@@ -27,7 +28,7 @@ body {
 
 h1 {
   color: rosybrown;
-  font-size: 30px;
+  font-size: 38px;
   font-weight: 800;
   margin-bottom: 0;
   padding-top: 100px;
@@ -57,7 +58,7 @@ h1 {
 .emoji {
   font-size: 90px;
   position: absolute;
-  top: 39%;
+  top: 41%;
   left: 47%;
 }
 
@@ -70,14 +71,34 @@ h1 {
 .cloudy {
   color: rosybrown;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 20px;
   margin-top: 30px;
   margin-bottom: 25px;
+
+  border: 1px opacity rosybrown;
+  border-radius: 15px;
+  box-shadow: 1px 1px 15px;
+  margin-left: 190px;
+  margin-right: 190px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .row {
   color: rosybrown;
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto;
   text-align: center;
+}
+
+.humidity-emoji {
+  font-size: 40px;
+}
+
+.precipitation-emoji {
+  font-size: 40px;
+}
+
+.wind-emoji {
+  font-size: 40px;
 }
