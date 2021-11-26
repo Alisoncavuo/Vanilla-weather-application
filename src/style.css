@@ -3,8 +3,14 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+.weatherwrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .weatherwrap {
-  max-width: 700px;
+  max-width: 600px;
   margin: 0 auto;
   margin-top: 30px;
   text-align: center;
@@ -37,14 +43,41 @@ h1 {
   color: rosybrown;
   font-size: 70px;
   font-weight: bolder;
+  margin-right: 30px;
 }
 
-.celcius {
+.all-degrees {
   color: rosybrown;
-  font-size: 40px;
+  font-size: 30px;
+  position: absolute;
+  left: 52%;
+  margin-top: 12px;
 }
 
-.faren {
+.emoji {
+  font-size: 90px;
+  position: absolute;
+  top: 39%;
+  left: 47%;
+}
+
+.line {
+  margin-top: 160px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.cloudy {
   color: rosybrown;
-  font-size: 40px;
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.row {
+  color: rosybrown;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
 }
