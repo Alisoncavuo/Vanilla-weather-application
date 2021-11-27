@@ -34,6 +34,10 @@ body {
   padding-top: 100px;
 }
 
+#city:first-letter {
+  text-transform: capitalize;
+}
+
 #time-date {
   color: rosybrown;
   padding-top: 0;
@@ -55,8 +59,8 @@ body {
   margin-top: 12px;
 }
 
-.emoji {
-  font-size: 90px;
+#emoji {
+  font-size: 110px;
   position: absolute;
   top: 41%;
   left: 47%;

@@ -38,6 +38,7 @@ function displayTemperature(response) {
   let feelslike = document.querySelector(".feels-like");
   let wind = document.querySelector(".wind");
   let timeElement = document.querySelector("#time-date");
+  let emoji = document.querySelector("#emoji");
 
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   city.innerHTML = response.data.name;
@@ -46,9 +47,14 @@ function displayTemperature(response) {
   feelslike.innerHTML = `Feels like ${response.data.main.feels_like}°C`;
   wind.innerHTML = `Wind ${response.data.wind.speed}km/h`;
   timeElement.innerHTML = formatDate(response.data.dt * 1000);
+  emoji.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 let apiKey = "190152064d2b31379030a729490bb67f";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Buenos Aires&appid=${apiKey}&units=metric`;
+let cityName = "belgium";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemperature);
