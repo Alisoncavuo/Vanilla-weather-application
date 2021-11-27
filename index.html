@@ -12,6 +12,9 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <!-- axios code -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <!-- css comes after Bootstrap otherwise is overide -->
     <link rel="stylesheet" href="src/style.css" />
   </head>
@@ -21,10 +24,10 @@
       <div class="weatherwrapper">
         <div class="weatherwrap">
           <div class="title">📍Ali's weather app📍</div>
-          <h1>Buenos Aires</h1>
+          <h1 id="city">Buenos</h1>
           <div id="time-date">Tuesday 25th, 16:42</div>
 
-          <span class="degree-number">16</span>
+          <span id="degree-number">16</span>
           <span class="all-degrees">
             <span class="celcius">°C </span>
             <span class="faren">| F°</span>
@@ -32,15 +35,15 @@
 
           <div class="emoji">🌤</div>
           <div class="line"><hr /></div>
-          <div class="cloudy">Cloudy</div>
+          <div id="cloudy">Cloudy</div>
 
           <div class="row">
             <div class="col-md-4 humidity-emoji">💦</div>
-            <div class="col-md-4 precipitation-emoji">🌧</div>
+            <div class="col-md-4 feelslike-emoji">🤔</div>
             <div class="col-md-4 wind-emoji">💨</div>
 
             <div class="col-md-4 humidity">Humidity 80%</div>
-            <div class="col-md-4 precipitation">Precipitation 34%</div>
+            <div class="col-md-4 feels-like">Feels Like</div>
             <div class="col-md-4 wind">Wind 1.79km/h</div>
           </div>
         </div>

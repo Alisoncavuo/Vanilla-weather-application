@@ -26,7 +26,7 @@ body {
   font-size: small;
 }
 
-h1 {
+#city {
   color: rosybrown;
   font-size: 38px;
   font-weight: 800;
@@ -40,7 +40,7 @@ h1 {
   padding-bottom: 20px;
 }
 
-.degree-number {
+#degree-number {
   color: rosybrown;
   font-size: 70px;
   font-weight: bolder;
@@ -68,7 +68,8 @@ h1 {
   margin-right: 70px;
 }
 
-.cloudy {
+#cloudy {
+  text-transform: capitalize;
   color: rosybrown;
   font-weight: bold;
   font-size: 20px;
@@ -95,7 +96,7 @@ h1 {
   font-size: 40px;
 }
 
-.precipitation-emoji {
+.feelslike-emoji {
   font-size: 40px;
 }
 
