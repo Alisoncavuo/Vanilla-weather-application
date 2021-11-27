@@ -17,7 +17,7 @@ body {
   padding: 20px;
   border: 1px solid red;
   border-radius: 10px;
-  background: linear-gradient(to top, #f7efb2 20%, #ace0f9 80%);
+  background: linear-gradient(to top, #fae6af 20%, #ace0f9 85%);
   /* Margin: center text in page, Text align: to center text only */
 }
 
@@ -69,7 +69,6 @@ body {
 }
 
 #cloudy {
-  text-transform: capitalize;
   color: rosybrown;
   font-weight: bold;
   font-size: 20px;
@@ -83,6 +82,10 @@ body {
   margin-right: 190px;
   padding-top: 6px;
   padding-bottom: 6px;
+}
+
+#cloudy:first-letter {
+  text-transform: capitalize;
 }
 
 .row {
