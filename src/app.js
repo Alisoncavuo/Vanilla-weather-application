@@ -1,5 +1,17 @@
 //Get axios code, my apikey from weatherman, the weather url, add the apiKey in url, add unit in metric, ask axios to get url and display temp
 
+//function dayAndNight() {
+//let currentDay = new Date(timestamp);
+// let dayNight = currentDay.getHours();
+// if (dayNight < 12) {
+//   let bodyColor = document.querySelector(".weatherwrap")[0];
+//   bodyColor.style.backgroundcolor = "blue";
+// } else {
+//  let bodyColor = document.querySelector(".weatherwrap")[0];
+//   bodyColor.style.backgroundColor = "red";
+// }
+//}
+
 //timestamp:number of miliseconds that has happened since 1970. thats how date in js works
 function formatDate(timestamp) {
   //calculate the date
@@ -54,7 +66,7 @@ function displayTemperature(response) {
 }
 
 let apiKey = "190152064d2b31379030a729490bb67f";
-let cityName = "belgium";
+let cityName = "buenos Aires";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemperature);
