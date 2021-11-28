@@ -65,8 +65,20 @@ function displayTemperature(response) {
   );
 }
 
-let apiKey = "190152064d2b31379030a729490bb67f";
-let cityName = "buenos Aires";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
+function search(city) {
+  let apiKey = "190152064d2b31379030a729490bb67f";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
 
-axios.get(apiUrl).then(displayTemperature);
+function handlesubmit(event) {
+  //prevent page form reoading
+  event.preventDefault();
+  let cityInput = document.querySelector("#form-control");
+  search(cityInput.value);
+}
+
+search("new york");
+
+let form = document.querySelector("#weather-form");
+form.addEventListener("submit", handlesubmit);

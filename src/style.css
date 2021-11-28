@@ -26,6 +26,19 @@ body {
   font-size: small;
 }
 
+#form-control {
+  border: 2px solid rosybrown;
+}
+#search-button {
+  color: rosybrown;
+  cursor: pointer;
+  border-style: none;
+  border: 1px;
+  border-radius: 1px;
+  box-shadow: 1px 1px 10px;
+  margin-left: 20px;
+}
+
 #city {
   color: rosybrown;
   font-size: 38px;
@@ -62,7 +75,7 @@ body {
 #emoji {
   font-size: 110px;
   position: absolute;
-  top: 41%;
+  top: 47%;
   left: 47%;
 }
 
