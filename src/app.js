@@ -1,18 +1,7 @@
 //Get axios code, my apikey from weatherman, the weather url, add the apiKey in url, add unit in metric, ask axios to get url and display temp
 
-//function dayAndNight() {
-//let currentDay = new Date(timestamp);
-// let dayNight = currentDay.getHours();
-// if (dayNight < 12) {
-//   let bodyColor = document.querySelector(".weatherwrap")[0];
-//   bodyColor.style.backgroundcolor = "blue";
-// } else {
-//  let bodyColor = document.querySelector(".weatherwrap")[0];
-//   bodyColor.style.backgroundColor = "red";
-// }
-//}
-
 //timestamp:number of miliseconds that has happened since 1970. thats how date in js works
+
 function formatDate(timestamp) {
   //calculate the date
 
@@ -52,6 +41,8 @@ function displayTemperature(response) {
   let timeElement = document.querySelector("#time-date");
   let emoji = document.querySelector("#emoji");
 
+  celciusTemperature = response.data.main.temp;
+
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   city.innerHTML = response.data.name;
   description.innerHTML = response.data.weather[0].description;
@@ -78,7 +69,33 @@ function handlesubmit(event) {
   search(cityInput.value);
 }
 
-search("new york");
+function showFarenTemp(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#degree-number");
+  //remove the active class the celcius link
+  celciLink.classList.remove("active");
+  farenLink.classList.add("active");
+  let farenTemp = (celciusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(farenTemp);
+}
+
+function showCelciTemp(event) {
+  event.preventDefault();
+  celciLink.classList.add("active");
+  farenLink.classList.remove("active");
+  let temperatureElement = document.querySelector("#degree-number");
+  temperatureElement.innerHTML = Math.round(celciusTemperature);
+}
+
+let celciusTemperature = null;
 
 let form = document.querySelector("#weather-form");
 form.addEventListener("submit", handlesubmit);
+
+let farenLink = document.querySelector("#faren-link");
+farenLink.addEventListener("click", showFarenTemp);
+
+let celciLink = document.querySelector("#celci-link");
+celciLink.addEventListener("click", showCelciTemp);
+
+search("new york");

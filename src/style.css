@@ -57,6 +57,11 @@ body {
   padding-bottom: 20px;
 }
 
+.celcius .active {
+  color: rosybrown;
+  cursor: default;
+}
+
 #degree-number {
   color: rosybrown;
   font-size: 70px;
@@ -64,7 +69,15 @@ body {
   margin-right: 30px;
 }
 
-.all-degrees {
+#celci-link {
+  text-decoration: none;
+}
+
+#faren-link {
+  text-decoration: none;
+}
+
+.celcius {
   color: rosybrown;
   font-size: 30px;
   position: absolute;
