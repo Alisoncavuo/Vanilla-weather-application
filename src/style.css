@@ -1,6 +1,9 @@
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/880/original/cloud.jpeg?1638203116);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .weatherwrapper {
@@ -15,35 +18,38 @@ body {
   margin-top: 30px;
   text-align: center;
   padding: 20px;
-  border: 5px solid rosybrown;
+  border: 3px solid #98b9c5;
   border-radius: 10px;
   background: linear-gradient(
-    181deg,
-    rgb(2, 0, 97) 15%,
-    rgb(97, 149, 219) 158.5%
+    90deg,
+    rgb(90, 132, 150) 0%,
+    rgb(57, 100, 160) 42%,
+    rgb(26, 59, 107) 68%,
+    rgb(15, 33, 65) 100%
   );
   /* Margin: center text in page, Text align: to center text only */
 }
 
 .title {
-  color: rosybrown;
+  color: #98b9c5;
   font-size: small;
   margin: 20px;
 }
 
 #form-control {
-  border: 3px solid rosybrown;
+  border: 3px solid #98b9c5;
 }
 #search-button {
-  color: rosybrown;
+  color: #98b9c5;
+  background-color: rgb(15, 33, 65);
   cursor: pointer;
-  border: 3px solid rosybrown;
+  border: 2px solid #98b9c5;
   font-weight: bolder;
   margin-left: 20px;
 }
 
 #city {
-  color: rosybrown;
+  color: #98b9c5;
   font-size: 38px;
   font-weight: 800;
   margin-bottom: 0;
@@ -55,18 +61,18 @@ body {
 }
 
 #time-date {
-  color: rosybrown;
+  color: #98b9c5;
   padding-top: 0;
   padding-bottom: 20px;
 }
 
 .celcius .active {
-  color: rosybrown;
+  color: #98b9c5;
   cursor: default;
 }
 
 #degree-number {
-  color: rosybrown;
+  color: #98b9c5;
   font-size: 90px;
   font-weight: bolder;
   margin-right: 30px;
@@ -81,7 +87,7 @@ body {
 }
 
 .celcius {
-  color: rosybrown;
+  color: #98b9c5;
   font-size: 30px;
   position: absolute;
   left: 52%;
@@ -103,13 +109,13 @@ body {
 }
 
 #cloudy {
-  color: rosybrown;
+  color: #98b9c5;
   font-weight: bold;
   font-size: 20px;
   margin-top: 30px;
   margin-bottom: 25px;
 
-  border: 1px opacity rosybrown;
+  border: 1px opacity #98b9c5;
   border-radius: 15px;
   box-shadow: 1px 1px 15px;
   margin-left: 190px;
@@ -123,7 +129,7 @@ body {
 }
 
 .row {
-  color: rosybrown;
+  color: #98b9c5;
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
