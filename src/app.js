@@ -87,6 +87,18 @@ function showCelciTemp(event) {
   temperatureElement.innerHTML = Math.round(celciusTemperature);
 }
 
+function dayAndNight() {
+  let currentDay = new Date();
+  let dayNight = currentDay.getHours();
+  if (dayNight < 12) {
+    let bodyColor = document.querySelector("body");
+    bodyColor.style.background = "blue";
+  } else {
+    let bodyColor = document.querySelector("body");
+    bodyColor.style.background = "red";
+  }
+}
+
 let celciusTemperature = null;
 
 let form = document.querySelector("#weather-form");
