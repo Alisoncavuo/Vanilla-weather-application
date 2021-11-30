@@ -111,3 +111,18 @@ let celciLink = document.querySelector("#celci-link");
 celciLink.addEventListener("click", showCelciTemp);
 
 search("new york");
+
+//function dayAndNight(submit) {
+//let currentDay = new Date();
+//let dayNight = currentDay.getHours();
+//if (dayNight < 12) {
+// let bodyColor = document.querySelector("body");
+// bodyColor.style.background = "blue";
+// } else {
+//  let bodyColor = document.querySelector("body");
+//  bodyColor.style.background = "red";
+//}
+//}
+
+//let bodyBackground = document.querySelector("body");
+//bodyBackground.addEventListener("submit", dayAndNight);
