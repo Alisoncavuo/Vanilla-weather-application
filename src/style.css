@@ -20,14 +20,9 @@ body {
   padding: 20px;
   border: 3px solid #4c61a7;
   border-radius: 10px;
-  background: #6f84c9;
-  /* Margin: center text in page, Text align: to center text only */
-}
+  background: rgba(130, 118, 199, 0.8);
 
-.title {
-  color: #dcdbee;
-  font-size: small;
-  margin: 3px;
+  /* Margin: center text in page, Text align: to center text only */
 }
 
 #form-control {
@@ -38,7 +33,7 @@ body {
 }
 #search-button {
   color: #dcdbee;
-  background-color: #4c61a7;
+  background-color: rgb(110, 97, 180);
   cursor: pointer;
   border: 3px solid #dcdbee;
   font-weight: bolder;
@@ -47,7 +42,7 @@ body {
 }
 
 #current-location {
-  background-color: #4c61a7;
+  background-color: rgb(110, 97, 180);
   cursor: pointer;
   border: 3px solid #dcdbee;
   margin-left: 10px;
@@ -59,7 +54,7 @@ body {
   font-size: 34px;
   font-weight: 800;
   margin-bottom: 0;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 #city:first-letter {
@@ -81,7 +76,7 @@ body {
   color: #dcdbee;
   font-size: 83px;
   font-weight: bolder;
-  margin-right: 30px;
+  margin-right: 40px;
 }
 
 #celci-link {
@@ -102,7 +97,7 @@ body {
 
 #emoji {
   position: absolute;
-  top: 40%;
+  top: 36%;
   left: 47%;
 }
 
@@ -119,7 +114,7 @@ body {
   font-weight: bold;
   font-size: 20px;
   margin-top: 15px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 
   border: 1px opacity #dcdbee;
   border-radius: 15px;
@@ -169,4 +164,23 @@ body {
 
 .forecast-temp-max {
   color: #39497e;
+}
+
+.line-one {
+  padding-top: 40px;
+  margin-bottom: 0.5rem;
+}
+
+.forecast {
+  padding-top: 40px;
+  margin-bottom: 0.5rem;
+}
+
+.line-two {
+  padding-top: 40px;
+  margin-bottom: 0.5rem;
+}
+
+#weather-forecast-temp {
+  margin-top: 0;
 }
