@@ -141,18 +141,6 @@ function showCelciTemp(event) {
   temperatureElement.innerHTML = Math.round(celciusTemperature);
 }
 
-function dayAndNight() {
-  let currentDay = new Date();
-  let dayNight = currentDay.getHours();
-  if (dayNight < 12) {
-    let bodyColor = document.querySelector("body");
-    bodyColor.style.background = "blue";
-  } else {
-    let bodyColor = document.querySelector("body");
-    bodyColor.style.background = "red";
-  }
-}
-
 let celciusTemperature = null;
 
 let form = document.querySelector("#weather-form");
@@ -165,6 +153,20 @@ let celciLink = document.querySelector("#celci-link");
 celciLink.addEventListener("click", showCelciTemp);
 
 search("new york");
+
+function searchLocation(position) {
+  let apiKey = "190152064d2b31379030a729490bb67f";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function getCurrentPosition(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchLocation);
+}
+
+let buttonTwo = document.querySelector("#current-location");
+buttonTwo.addEventListener("click", getCurrentPosition);
 
 //function dayAndNight(submit) {
 //let currentDay = new Date();

@@ -1,7 +1,7 @@
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/880/original/cloud.jpeg?1638203116);
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/022/175/original/cloud.jpeg?1638726994);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -18,42 +18,48 @@ body {
   margin-top: 30px;
   text-align: center;
   padding: 20px;
-  border: 3px solid #98b9c5;
+  border: 3px solid #4c61a7;
   border-radius: 10px;
-  background: linear-gradient(
-    90deg,
-    rgb(90, 132, 150) 0%,
-    rgb(57, 100, 160) 42%,
-    rgb(26, 59, 107) 68%,
-    rgb(24, 56, 110) 100%
-  );
+  background: #6f84c9;
   /* Margin: center text in page, Text align: to center text only */
 }
 
 .title {
-  color: #98b9c5;
+  color: #dcdbee;
   font-size: small;
-  margin: 20px;
+  margin: 3px;
 }
 
 #form-control {
-  border: 3px solid #98b9c5;
+  border: 4px solid #dcdbee;
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-right: 30px;
 }
 #search-button {
-  color: #98b9c5;
-  background-color: rgb(15, 33, 65);
+  color: #dcdbee;
+  background-color: #4c61a7;
   cursor: pointer;
-  border: 2px solid #98b9c5;
+  border: 3px solid #dcdbee;
   font-weight: bolder;
   margin-left: 20px;
+  border-radius: 3px;
+}
+
+#current-location {
+  background-color: #4c61a7;
+  cursor: pointer;
+  border: 3px solid #dcdbee;
+  margin-left: 10px;
+  border-radius: 3px;
 }
 
 #city {
-  color: #98b9c5;
-  font-size: 38px;
+  color: #dcdbee;
+  font-size: 34px;
   font-weight: 800;
   margin-bottom: 0;
-  padding-top: 100px;
+  padding-top: 30px;
 }
 
 #city:first-letter {
@@ -61,19 +67,19 @@ body {
 }
 
 #time-date {
-  color: #98b9c5;
+  color: #dcdbee;
   padding-top: 0;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
 
 .celcius .active {
-  color: #98b9c5;
+  color: #dcdbee;
   cursor: default;
 }
 
 #degree-number {
-  color: #98b9c5;
-  font-size: 90px;
+  color: #dcdbee;
+  font-size: 83px;
   font-weight: bolder;
   margin-right: 30px;
 }
@@ -87,7 +93,7 @@ body {
 }
 
 .celcius {
-  color: #98b9c5;
+  color: #dcdbee;
   font-size: 30px;
   position: absolute;
   left: 52%;
@@ -96,12 +102,12 @@ body {
 
 #emoji {
   position: absolute;
-  top: 59%;
+  top: 40%;
   left: 47%;
 }
 
 .line {
-  margin-top: 160px;
+  margin-top: 80px;
   margin-left: 70px;
   margin-right: 70px;
   color: aliceblue;
@@ -109,17 +115,17 @@ body {
 }
 
 #cloudy {
-  color: #98b9c5;
+  color: #dcdbee;
   font-weight: bold;
   font-size: 20px;
-  margin-top: 30px;
+  margin-top: 15px;
   margin-bottom: 25px;
 
-  border: 1px opacity #98b9c5;
+  border: 1px opacity #dcdbee;
   border-radius: 15px;
   box-shadow: 1px 1px 15px;
-  margin-left: 190px;
-  margin-right: 190px;
+  margin-left: 180px;
+  margin-right: 180px;
   padding-top: 6px;
   padding-bottom: 6px;
 }
@@ -129,7 +135,7 @@ body {
 }
 
 .row {
-  color: #98b9c5;
+  color: #dcdbee;
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
@@ -148,9 +154,9 @@ body {
 }
 
 .weather-forecast {
-  margin-top: 60px;
+  margin-top: 40px;
   text-align: center;
-  color: #98b9c5;
+  color: #dcdbee;
 }
 .forecast-weekday {
   font-size: 20px;
@@ -162,5 +168,5 @@ body {
 }
 
 .forecast-temp-max {
-  color: #1e3e49;
+  color: #39497e;
 }

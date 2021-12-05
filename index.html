@@ -23,10 +23,11 @@
     <div class="container">
       <div class="weatherwrapper">
         <div class="weatherwrap">
-          <div class="title">📍Ali's weather app📍</div>
+          <div class="title">Ali's weather app</div>
           <form id="weather-form">
             <input type="search" placeholder="City name" id="form-control" />
-            <input type="submit" value="🔎 Search" id="search-button" />
+            <input type="submit" value="🔎 SEARCH" id="search-button" />
+            <input type="submit" value="📍" id="current-location" />
           </form>
           <h1 id="city">Buenos</h1>
           <div id="time-date">Tuesday 25th, 16:42</div>
@@ -52,21 +53,8 @@
             <div class="col-md-4 feels-like">Feels Like</div>
             <div class="col-md-4 wind">Wind 1.79km/h</div>
           </div>
-          <div class="weather-forecast" id="weather-forecast-temp">
-            <div class="row">
-              <div class="col-2">
-                <div class="forecast-weekday">Thursday</div>
-                <img
-                  src="http://openweathermap.org/img/wn/10d@2x.png"
-                  width="48"
-                />
-                <div class="forecast-temp">
-                  <span class="forecast-temp-max">18°</span>
-                  <span class="forecast-temp-min">11°</span>
-                </div>
-              </div>
-            </div>
-          </div>
+
+          <div class="weather-forecast" id="weather-forecast-temp"></div>
         </div>
         <small>
           <a
