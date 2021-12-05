@@ -154,6 +154,15 @@ body {
 .humidity-emoji {
   font-size: 40px;
 }
+.humidity {
+  font-weight: bold;
+}
+.feels-like {
+  font-weight: bold;
+}
+.wind {
+  font-weight: bold;
+}
 
 .feelslike-emoji {
   font-size: 40px;
