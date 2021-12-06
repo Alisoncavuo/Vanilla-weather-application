@@ -99,8 +99,10 @@ function displayTemperature(response) {
   city.innerHTML = response.data.name;
   description.innerHTML = response.data.weather[0].description;
   humidity.innerHTML = `Humidity ${response.data.main.humidity}%`;
-  feelslike.innerHTML = `Feels like ${response.data.main.feels_like}°C`;
-  wind.innerHTML = `Wind ${response.data.wind.speed}km/h`;
+  feelslike.innerHTML = `Feels like ${Math.round(
+    response.data.main.feels_like
+  )}°C`;
+  wind.innerHTML = `Wind ${Math.round(response.data.wind.speed)}km/h`;
   timeElement.innerHTML = formatDate(response.data.dt * 1000);
   emoji.setAttribute(
     "src",
@@ -123,34 +125,8 @@ function handlesubmit(event) {
   search(cityInput.value);
 }
 
-function showFarenTemp(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#degree-number");
-  //remove the active class the celcius link
-  celciLink.classList.remove("active");
-  farenLink.classList.add("active");
-  let farenTemp = (celciusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(farenTemp);
-}
-
-function showCelciTemp(event) {
-  event.preventDefault();
-  celciLink.classList.add("active");
-  farenLink.classList.remove("active");
-  let temperatureElement = document.querySelector("#degree-number");
-  temperatureElement.innerHTML = Math.round(celciusTemperature);
-}
-
-let celciusTemperature = null;
-
 let form = document.querySelector("#weather-form");
 form.addEventListener("submit", handlesubmit);
-
-let farenLink = document.querySelector("#faren-link");
-farenLink.addEventListener("click", showFarenTemp);
-
-let celciLink = document.querySelector("#celci-link");
-celciLink.addEventListener("click", showCelciTemp);
 
 search("new york");
 
@@ -167,18 +143,3 @@ function getCurrentPosition(event) {
 
 let buttonTwo = document.querySelector("#current-location");
 buttonTwo.addEventListener("click", getCurrentPosition);
-
-//function dayAndNight(submit) {
-//let currentDay = new Date();
-//let dayNight = currentDay.getHours();
-//if (dayNight < 12) {
-// let bodyColor = document.querySelector("body");
-// bodyColor.style.background = "blue";
-// } else {
-//  let bodyColor = document.querySelector("body");
-//  bodyColor.style.background = "red";
-//}
-//}
-
-//let bodyBackground = document.querySelector("body");
-//bodyBackground.addEventListener("submit", dayAndNight);
